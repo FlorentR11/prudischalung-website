@@ -31,3 +31,33 @@ function setGreeting() {
 
     document.getElementById("greeting").innerText = greeting;
 }
+
+document.getElementById("contactForm")
+.addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const formData = new FormData(this);
+
+const data = {
+name: formData.get("name"),
+email: formData.get("email"),
+phone: formData.get("phone"),
+message: formData.get("message")
+};
+
+await fetch("http://localhost:3000/send",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify(data)
+
+});
+
+alert("Anfrage wurde gesendet!");
+
+});

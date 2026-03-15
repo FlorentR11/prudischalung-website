@@ -227,15 +227,46 @@ padding:100px 10%;
 text-align:center;
 
 }
-.contact img{
 
-}
 
 footer{
 background:black;
 color:white;
 padding:20px;
 text-align:center;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+max-width:500px;
+margin:30px auto;
+}
+
+form input, form textarea{
+padding:12px;
+border:none;
+border-radius:6px;
+}
+
+form textarea{
+height:120px;
+}
+
+form button{
+background:#f4b400;
+border:none;
+padding:12px;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+.map{
+margin-top:40px;
+border-radius:12px;
+overflow:hidden;
 }
 
 /* HAMBURGER */
@@ -255,6 +286,10 @@ background:#111;
 }
 
 @media(max-width: 900px){
+    .hero {
+        background: url();
+    
+    }
 
 nav{
 position:fixed;
