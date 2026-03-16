@@ -381,21 +381,21 @@ overflow:hidden;
 
 
 
-/* HAMBURGER */
 
-#hamburger{
+
+
+
+/* MOBILE */
+
+.hamburger{
 display:none;
 font-size:28px;
 cursor:pointer;
 }
 
-/* MOBILE */
+/* MOBILE DESIGN */
 
 @media(max-width:900px){
-
-header{
-padding:15px 20px;
-}
 
 nav{
 position:absolute;
@@ -416,12 +416,13 @@ padding:20px;
 
 nav.active{
 max-height:400px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
 }
 
-#hamburger{
+.hamburger{
 display:block;
 }
+
+
 
 .hero h1{
 font-size:32px;
@@ -444,7 +445,8 @@ grid-template-columns:1fr;
 .contact{
 padding:70px 20px;
 }
-
 }
+
+
 
 

@@ -9,10 +9,10 @@ window.addEventListener("scroll", function () {
 });
 
 const hamburger = document.getElementById("hamburger");
-const nav = document.querySelector("nav");
+const nav = document.getElementById("nav");
 
-hamburger.addEventListener("click", function(){
-    nav.classList.toggle("active");
+hamburger.addEventListener("click", () => {
+nav.classList.toggle("active");
 });
 
 function setGreeting() {
@@ -99,11 +99,3 @@ lightbox.addEventListener('click', e=>{
   if(e.target == lightbox) lightbox.style.display = 'none';
 });
 
-//hamburger menu//
-
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-
-hamburger.addEventListener("click", function(){
-nav.classList.toggle("active");
-});
