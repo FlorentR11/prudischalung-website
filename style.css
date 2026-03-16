@@ -316,6 +316,7 @@ background:#111;
 color:white;
 padding:100px 10%;
 text-align:center;
+align-items: center;
 
 }
 
@@ -365,7 +366,30 @@ overflow:hidden;
 
 
 
+.social-icons{
+display:flex;
+gap:15px;
+}
 
+.social-icons a{
+display:flex;
+align-items:center;
+justify-content:center;
+width:40px;
+height:40px;
+background:#f4b400;
+color:black;
+border-radius:50%;
+font-size:18px;
+transition:0.3s;
+text-decoration:none;
+}
+
+.social-icons a:hover{
+background:black;
+color:#f4b400;
+transform:scale(1.1);
+}
 
 
 
