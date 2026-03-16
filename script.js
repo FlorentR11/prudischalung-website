@@ -100,25 +100,3 @@ lightbox.addEventListener('click', e=>{
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-
-  const scrollBtn = document.getElementById("scrollTopBtn");
-
-  // Shfaq/fshi button kur scroll > 300
-  window.addEventListener("scroll", function() {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add("show");
-    } else {
-      scrollBtn.classList.remove("show");
-    }
-  });
-
-  // Kur klikojm, shkojmë në top
-  scrollBtn.addEventListener("click", function() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-
-});
