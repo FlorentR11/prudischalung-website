@@ -61,3 +61,40 @@ body: JSON.stringify(data)
 alert("Anfrage wurde gesendet!");
 
 });
+
+fetch("/api/send", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        name,
+        email,
+        phone,
+        message,
+})
+})
+
+// Lightbox JS
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const captionText = document.getElementById('caption');
+const projectCards = document.querySelectorAll('.project-card img');
+const closeBtn = document.querySelector('.close');
+
+projectCards.forEach(img=>{
+  img.addEventListener('click', ()=>{
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src;
+    captionText.innerHTML = img.alt;
+  });
+});
+
+closeBtn.addEventListener('click', ()=>{
+  lightbox.style.display = 'none';
+});
+
+// Close when click outside image
+lightbox.addEventListener('click', e=>{
+  if(e.target == lightbox) lightbox.style.display = 'none';
+});

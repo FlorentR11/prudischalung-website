@@ -52,3 +52,10 @@ res.send("Email gesendet");
 app.listen(3000, ()=>{
 console.log("Server läuft auf Port 3000");
 });
+const transporter = nodemailer.createTransport({
+service: "gmail",
+auth: {
+user:  "prudischalunggmbh@gmail.com",
+pass: process.env "PASSWORDI_EMAILIT"
+}
+});
