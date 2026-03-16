@@ -56,6 +56,6 @@ const transporter = nodemailer.createTransport({
 service: "gmail",
 auth: {
 user:  "prudischalunggmbh@gmail.com",
-pass: process.env "PASSWORDI_EMAILIT"
+pass:  "PASSWORDI_EMAILIT"
 }
 });

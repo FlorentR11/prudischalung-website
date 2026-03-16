@@ -98,3 +98,12 @@ closeBtn.addEventListener('click', ()=>{
 lightbox.addEventListener('click', e=>{
   if(e.target == lightbox) lightbox.style.display = 'none';
 });
+
+//hamburger menu//
+
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("nav");
+
+hamburger.addEventListener("click", function(){
+nav.classList.toggle("active");
+});
