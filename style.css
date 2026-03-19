@@ -416,12 +416,12 @@ background:#1ebe5d;
   align-items:center;
   gap:8px;
   background:#f4b400;
-  color:black;
+  color:rgb(0, 0, 0);
   padding:8px 12px;
   border-radius:6px;
   text-decoration:none;
   font-weight:600;
-  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
   transition:0.3s;
 }
 
